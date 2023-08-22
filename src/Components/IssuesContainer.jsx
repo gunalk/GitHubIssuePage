@@ -28,7 +28,7 @@ const IssuesContainer = ({ Issues, loading,input }) => {
             <GoIssueOpened className="icon" style={{color:"green",marginRight:"20px"}}/>
             <strong className="Title">{issue.title}</strong>
             <b  style={{position:"absolute",right:"2%"}} >{issue.comments > 0 ? (<>
-              <GoComment size="20" style={{color:"#707070	",fontWeight:"700"}}/> <span style={{color:"#707070	"}}>{issue.comments}</span>
+              <GoComment size="20" style={{color:"#707070",fontWeight:"700"}}/> <span style={{color:"#707070"}}>{issue.comments}</span>
 
 
               </>):(<></>)
@@ -55,7 +55,7 @@ const IssuesContainer = ({ Issues, loading,input }) => {
             <GoIssueOpened className="icon" style={{color:"green",marginRight:"20px"}}/>
             <strong className="Title">{issue.title}</strong>
             <b  style={{position:"absolute",right:"2%"}} >{issue.comments > 0 ? (<>
-              <GoComment size="20" style={{color:"#707070	",fontWeight:"700"}}/> <span style={{color:"#707070	"}}>{issue.comments}</span>
+              <GoComment size="20" style={{color:"#707070",fontWeight:"700"}}/> <span style={{color:"#707070"}}>{issue.comments}</span>
 
 
               </>):(<></>)
