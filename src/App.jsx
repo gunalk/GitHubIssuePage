@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import PageNo from './Components/PageNo';
 import { GoTriangleDown } from "react-icons/go";
 import dotenv from 'dotenv';
-dotenv.config();
+  dotenv.config();
 
 
 
