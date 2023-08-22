@@ -30,7 +30,7 @@ function App() {
   const fetchIssues = async () => {
     setLoading(true)
     const octokit = new Octokit({
-      auth: {token}})
+      auth: token})
     let response = await octokit.request('GET /repos/prettier/prettier/issues', {
       owner: 'prettier',
       repo: 'prettier',
