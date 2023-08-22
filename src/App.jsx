@@ -7,12 +7,6 @@ import IssuesContainer from './Components/IssuesContainer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PageNo from './Components/PageNo';
 import { GoTriangleDown } from "react-icons/go";
-import dotenv from 'dotenv';
-  dotenv.config();
-
-
-
-
 
 
 function App() {
@@ -22,7 +16,7 @@ function App() {
   const[input,setInput]=useState("")
   const startingPage=useSelector((state)=>state.user.currentpage)
   const [IssuesEachPage] = useState(10);
-  const token=process.env.TOKEN
+  
 
   
  
@@ -30,7 +24,7 @@ function App() {
   const fetchIssues = async () => {
     setLoading(true)
     const octokit = new Octokit({
-      auth: token})
+      auth: "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"})
     let response = await octokit.request('GET /repos/prettier/prettier/issues', {
       owner: 'prettier',
       repo: 'prettier',
