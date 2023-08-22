@@ -16,11 +16,6 @@ function App() {
   const[input,setInput]=useState("")
   const startingPage=useSelector((state)=>state.user.currentpage)
   const [IssuesEachPage] = useState(10);
-  
-
-  
- 
-  
   const fetchIssues = async () => {
     setLoading(true)
     const octokit = new Octokit({
