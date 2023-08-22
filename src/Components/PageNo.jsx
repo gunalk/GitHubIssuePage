@@ -16,8 +16,8 @@ const PageNo = ({ IssuesEachPage, totalIssues }) => {
     <nav>
       <ul style={{display:"flex",justifyContent:"center"}}className='pagination'>
         {pageNumbers.map(number => (
-          <li key={number} className='page-item'>
-            <a onClick={() => dispatch(pageChange(number))} href='!#' className='page-link'>
+          <li id="page" key={number} className='page-item'>
+            <a  onClick={() => dispatch(pageChange(number))} href='!#' className='page-link'>
               {number}
             </a>
           </li>
